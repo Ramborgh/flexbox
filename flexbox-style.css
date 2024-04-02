@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui;
+}
+.box-1{
+    height: 50px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-2,.box-4{
+    height: 600px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-3{
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-5{
+    height: 50px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tilbud1{
+    height: 25px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+.tilbud2{
+    height: 75px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+.tilbud3{
+    height: 150px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+
+.mini-box{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    height: 25px;
+    width: 25px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    background: green;
+}
+.mini-box1{
+    display: flex;
+    align-items: left;
+    height: 25px;
+    width: 25px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    background: green;
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1089px) {
+    .mini-box{
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+    .tilbud1{
+        flex-grow: 1;
+    }
+    .tilbud2{
+       order: -1
+    }
+    .tilbud3{
+        order: -2;
+    }
+}
+
+/*/
+    .{
+        max-width: 1155px;
+        margin: 0 auto;
+    }
+    .box-1{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    .box-3{
+        order: -1;
+    }
+
